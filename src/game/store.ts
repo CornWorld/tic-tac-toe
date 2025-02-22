@@ -114,7 +114,7 @@ const createGameStore = () => {
 			return res;
 		},
 		setSelectedCell: (index: number) => {
-			if(index >= 0 && index < 9) {
+			if(index === -1 || (index >= 0 && index < 9)) {
 				setGameState('selectedCell', index);
 			}
 		},
@@ -139,6 +139,9 @@ const createGameStore = () => {
 				if(gameState.selectedCell !== -1) {
 					gameState.placePiece(gameState.selectedCell, gameState.currentPlayer);
 				}
+				break;
+			case 'Escape':
+				gameState.setSelectedCell(-1);
 				break;
 			}
 		}

@@ -41,6 +41,8 @@ const Cell: Component<CellProps> = (props) => {
         <span class={`
           ${cellContent() === 'X' ? 'text-blue-400' : 'text-red-400'}
           transition-colors duration-200
+          select-none
+          user-select-none
         `}>
           {cellContent()}
         </span>

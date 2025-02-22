@@ -6,6 +6,7 @@ import StatusBar from './components/StatusBar';
 import Board from './components/Board';
 import ControlButtons from './components/ControlButtons';
 import MobileInstructions from './components/MobileInstructions';
+import KeyboardTip from './components/KeyboardTip';
 
 const App: Component = () => {
 	const game = createGameStore();
@@ -84,6 +85,8 @@ const App: Component = () => {
 								onTouchStart={handleTouchStart}
 								onTouchEnd={handleTouchEnd}
 							/>
+
+							<KeyboardTip />
 
 							<ControlButtons
 								onNewGame={handleNewGame}
