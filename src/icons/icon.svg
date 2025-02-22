@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <rect width="512" height="512" fill="#3b82f6" rx="128"/>
+    <g fill="none" stroke="#ffffff" stroke-width="40" stroke-linecap="round">
+        <!-- Grid -->
+        <line x1="171" y1="128" x2="171" y2="384"/>
+        <line x1="341" y1="128" x2="341" y2="384"/>
+        <line x1="128" y1="171" x2="384" y2="171"/>
+        <line x1="128" y1="341" x2="384" y2="341"/>
+        <!-- X and O -->
+        <circle cx="256" cy="256" r="48"/>
+        <path d="M128,128 L171,171 M384,384 L341,341"/>
+    </g>
+</svg> 

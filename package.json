@@ -1,0 +1,37 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.0.0",
+  "author": "CornWorld<>",
+  "description": "Tic Tac Toe game",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "gen-icons": "node scripts/generate-icons.js"
+  },
+  "license": "private",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.3",
+    "@types/lodash": "^4.17.15",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.1",
+    "vite-plugin-solid": "^2.11.1",
+    "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "solid-js": "^1.9.3",
+    "solid-motionone": "^1.0.3"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "sharp"
+    ]
+  }
+}
