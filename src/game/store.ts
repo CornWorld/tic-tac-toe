@@ -60,6 +60,8 @@ const createGameStore = () => {
 		...defaultState,
 		selectedCell: -1,
 		placePiece: (pos, player) => {
+			if(gameState.board[pos]!=='') return;
+
 			setGameState('board', pos, player);
 
 			if(gameState.checkWon(player) || gameState.checkDraw()) {
