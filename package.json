@@ -1,8 +1,12 @@
 {
   "name": "tic-tac-toe",
-  "version": "0.0.0",
-  "author": "CornWorld<>",
-  "description": "Tic Tac Toe game",
+  "version": "0.0.1",
+  "author": {
+    "name": "CornWorld",
+    "email": "github.contact@corn.im",
+    "url": "https://corn.im/"
+  },
+  "description": "A tic-tac-toe game implemented in Solid.js and Tailwindcss",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -11,7 +15,7 @@
     "serve": "vite preview",
     "gen-icons": "node scripts/generate-icons.js"
   },
-  "license": "private",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.3",
     "@types/lodash": "^4.17.15",
